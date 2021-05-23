@@ -1,0 +1,383 @@
+        /*#region background style*/
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+            body{
+                overflow: hidden;
+                font-family: 'Roboto', sans-serif;
+            }
+            .background{
+
+                height: 100%;
+                width:100%;
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                
+
+                animation-name: pozadi;
+                animation-duration: 10s;
+                animation-iteration-count: infinite;
+                background-image:url("https://static.vecteezy.com/system/resources/previews/000/621/684/large_2x/abstract-dark-blue-squares-pattern-background-subtle-lattice-luxury-style-trellis-repeat-geometric-grid-vector.jpg");
+                background-size:cover;
+            }
+            @keyframes pozadi{
+                0%{
+                    filter:saturate(1);
+                }
+                50%{
+                    filter: saturate(0.7);
+                }
+                100%{
+                    filter: saturate(1);
+                }
+            }     
+        /*#endregion background style*/
+        /*#region menu style*/
+            #crossroad{
+                position: absolute;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            #crossroad #main{
+                    height: 30vh;
+                    width: 50vw;
+                    
+                    margin-top: 30vh;
+                    margin-left: auto;
+                    margin-right: auto;
+                    
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-evenly;
+                    
+                    position: relative;
+
+                    overflow: hidden;
+
+                    background-color: rgb(255, 195, 0);
+
+                    border-style: solid;
+                    border-width: 5px;
+                    border-color: orange;
+                    border-radius: 10px;
+
+                }
+
+            .contact{
+                width: 100%;
+            }
+            .info{
+                height: 40%;
+                margin: 0px;
+                padding: 5px;     
+                text-align: center;   
+                
+                
+            }
+            .info > p > a{
+                color: black;
+            }
+            #crossroad p{
+                margin-top: 0px;
+                font-size: 0.9em;
+            }
+            .links{
+                height: 50%;
+                font-size: 30px;
+                text-align: center;
+                letter-spacing: 5px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+
+                color: black;
+            }
+
+            .links a{
+                color: black;
+            }
+
+            .links a:hover{
+                animation-name: icons;
+                animation-duration: 1s;
+                animation-iteration-count: 1;
+
+                color: rgb(56, 56, 56);
+            }
+
+            @keyframes icons{
+                0%{
+                    size: initial;
+                }
+                100%{
+                    size: 30px
+                }
+            }
+
+            #crossroad .text{
+                background-color: rgb(255, 205, 0);
+                width: 150%;
+
+                text-align: center;
+                padding: 5px;
+            }
+            #crossroad .menu{
+                background-color: rgb(255, 195, 0);
+                width: 100%;
+                text-align: center;
+                color: black;
+            }
+            #crossroad .about{
+                padding: 5px;
+                padding-top: 5vh;
+                height: 30%;
+                font-size: xx-large;
+                border-bottom: 5px solid;
+            }
+            #crossroad .about > a{
+                color: black;
+                text-decoration: none;
+            }
+            #crossroad .menu > a{
+                color: black;
+                text-decoration: none;
+            }
+            .zivotopis{
+                padding: 5px;
+                padding-top: 5vh;
+                height: 50%;
+                font-size: xx-large;
+                
+            }
+            .about:hover{
+                cursor: pointer;
+            }
+            .zivotopis:hover{
+                cursor: pointer;
+            }
+            /*#endregion menu style*/
+        /*#region about style*/
+            #about{
+                /* display: none; */
+                position: absolute;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        #about  .main{
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 30vh;
+
+                height: 40vh;
+                width: 50vw;
+
+                background-color: rgb(1, 24, 99);
+
+                display: flex;
+                flex-direction: column;
+
+                border-radius: 20px;
+                overflow: hidden;
+
+                font-size: 0.7em;
+
+            }
+            #about  .main > a{
+                position: relative;
+                overflow: visible;
+            }
+            #about  .text{
+                height: 95%;
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+            }
+            .parts{
+                height: 100%;
+                width: 100%;
+                background-color: rgb(1, 25, 100);
+                border: black;
+                border-style: solid;
+                border-width: 1px;
+            }
+            .back{
+                background-color: black;
+                width: 100%;
+                height: 10%;
+            }
+            #about  p{
+                color:white;
+                padding: 15px;
+                padding-top: 9px;
+                font-family: 'Roboto', sans-serif;
+                height: 50vh;
+            }
+            #about  h1{
+                color: white;
+                padding-left: 15px;
+                font-family: 'Roboto', sans-serif;
+            }
+            #about  a{
+                text-decoration: none;
+                text-align: center;
+                color: white;
+                font-family: 'Roboto', sans-serif;
+                height: 20px;
+                width: 100%;
+                overflow: visible;
+            }
+            .hide{
+                position: relative;
+                background-color: rgb(0, 25, 100);
+                height: 100%;
+                width: 100%;
+                top: -60vh;
+                left: 0;
+                text-align: center;
+                padding-top: 10vh;
+            }
+            .hide:hover{
+                animation-name: hider;
+                animation-duration: 1s;
+                -o-animation-duration: 1s;
+                animation-iteration-count: 1;
+                animation-fill-mode: forwards;
+            }
+            @keyframes hider{
+                0%{
+                    opacity: 1;
+                }
+                100%{
+                    opacity: 0;
+                    /* visibility: hidden; */
+                    /* display: none; */
+                }
+            }
+            .parts > p{
+                left: 0;
+                top: 0;
+                white-space: normal;
+            }
+        /*#endregion about style*/
+        /*#region document style*/
+        #document{
+            position: absolute;
+            margin-left: auto;
+            margin-right: auto;
+
+            z-index: 2;
+        }
+        #document  #main{
+
+
+                height: 95vh;
+                width: 40vw;
+
+                margin-left: auto;
+                margin-right: auto;
+
+                border: solid 3px rgba(0, 124, 225, 0.5);
+                border-radius: 10px;
+
+                color: white;
+                background-color: rgb(0, 25, 100);
+
+                display: grid;
+                grid-template-columns: 12vw auto;
+                grid-template-rows: 15vh auto auto auto auto auto 3vh;
+                grid-template-areas:
+                 "photo header"
+                 "name  info"
+                 "name1 info1"
+                 "name2 info2"
+                 "name3 info3"
+                 "name4 info4"
+                 "back0 back1"
+                 ;
+
+                overflow: hidden;    
+
+                text-align: center;
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            
+                /* display: none; */
+                
+            }
+            #photo{
+                border-radius: 200px;
+                overflow: hidden;
+                background-image: url(https://i.insider.com/5c5dd439dde867479d106cc2?width=1000&format=jpeg&auto=webp);
+                background-size: cover;
+                
+                border-style: solid;
+                border-color: rgb(45, 75, 175);
+                margin: 10%;
+            }
+            img{
+                max-height: 100%;
+                max-width: 100%;
+            }
+            #document  .topic{
+                text-align: end;
+                padding-right: 10%;
+            }
+            #document  .info{
+                background-color: rgb(45, 75, 175);
+                align-content: center;
+                padding-top: 2vh;
+            }
+            #document  b{
+                font-size: 1.5em;
+            }
+            #document  p{
+                font-size: 0.75em;
+            }
+            #document  #back{
+                text-align: center;
+                grid-column-start: back0;
+                grid-column-end: back1;
+            }
+            #document  #back > p{
+                margin: 0;
+                color: white;
+            }
+        /*#endregion document style*/
+            #AboutShow{
+                height: 30vh;
+                width: 50vw;
+                
+                margin-top: 30vh;
+                margin-left: auto;
+                margin-right: auto;
+
+                background-color: rgb(255, 195, 0);
+
+                border-style: solid;
+                border-width: 5px;
+                border-color: orange;
+                border-radius: 10px;
+
+                display: none;
+            }
+            #DocumentShow{
+                height: 30vh;
+                width: 50vw;
+                
+                margin-top: 30vh;
+                margin-left: auto;
+                margin-right: auto;
+
+                background-color: rgb(255, 195, 0);
+
+                border-style: solid;
+                border-width: 5px;
+                border-color: orange;
+                border-radius: 10px;
+
+                display: none;
+            }
+            #test{
+                height: 50px;
+                width: 100px;
+                top: 0;
+                left: 0;
+                color: white;
+            }
