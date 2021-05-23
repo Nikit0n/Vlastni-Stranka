@@ -36,6 +36,7 @@
                 position: absolute;
                 margin-left: auto;
                 margin-right: auto;
+                width: 100%;
             }
             #crossroad #main{
                     height: 30vh;
@@ -62,10 +63,10 @@
 
                 }
 
-            .contact{
+                #crossroad .contact{
                 width: 100%;
             }
-            .info{
+            #crossroad .info{
                 height: 40%;
                 margin: 0px;
                 padding: 5px;     
@@ -73,14 +74,14 @@
                 
                 
             }
-            .info > p > a{
+            #crossroad .info > p > a{
                 color: black;
             }
             #crossroad p{
                 margin-top: 0px;
-                font-size: 0.9em;
+                font-size: 1em;
             }
-            .links{
+            #crossroad .links{
                 height: 50%;
                 font-size: 30px;
                 text-align: center;
@@ -91,11 +92,11 @@
                 color: black;
             }
 
-            .links a{
+            #crossroad .links a{
                 color: black;
             }
 
-            .links a:hover{
+            #crossroad .links a:hover{
                 animation-name: icons;
                 animation-duration: 1s;
                 animation-iteration-count: 1;
@@ -140,17 +141,17 @@
                 color: black;
                 text-decoration: none;
             }
-            .zivotopis{
+            #crossroad .zivotopis{
                 padding: 5px;
                 padding-top: 5vh;
                 height: 50%;
                 font-size: xx-large;
                 
             }
-            .about:hover{
+            #crossroad .about:hover{
                 cursor: pointer;
             }
-            .zivotopis:hover{
+            #crossroad .zivotopis:hover{
                 cursor: pointer;
             }
             /*#endregion menu style*/
@@ -160,6 +161,8 @@
                 position: absolute;
                 margin-left: auto;
                 margin-right: auto;
+                width: 100%;
+
             }
         #about  .main{
                 margin-left: auto;
@@ -224,6 +227,9 @@
                 width: 100%;
                 overflow: visible;
             }
+            a:hover{
+                cursor: pointer;
+            }
             .hide{
                 position: relative;
                 background-color: rgb(0, 25, 100);
@@ -262,8 +268,7 @@
             position: absolute;
             margin-left: auto;
             margin-right: auto;
-
-            z-index: 2;
+            width: 100%;
         }
         #document  #main{
 
@@ -304,7 +309,7 @@
             #photo{
                 border-radius: 200px;
                 overflow: hidden;
-                background-image: url(https://i.insider.com/5c5dd439dde867479d106cc2?width=1000&format=jpeg&auto=webp);
+                background-image: url("Nikita_Chad.png");
                 background-size: cover;
                 
                 border-style: solid;
@@ -374,10 +379,20 @@
 
                 display: none;
             }
-            #test{
+            #button{
                 height: 50px;
-                width: 100px;
-                top: 0;
-                left: 0;
-                color: white;
+                width: 50px;
+                bottom: 0;
+                right: 0;
+                background-color: white;
+                position: absolute;
+
+                text-align: center;
+
+                font-size: large;
+
+                border-radius: 25% 0 0 0;
+            }
+            #button:hover{
+                cursor: pointer;
             }
